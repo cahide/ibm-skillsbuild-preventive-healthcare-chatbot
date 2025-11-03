@@ -27,7 +27,7 @@ cd ibm-skillsbuild-preventive-healthcare-chatbot
 api_key = userdata.get('WATSONX_API_KEY')
 project_id = userdata.get('WATSONX_PROJECT_ID')
 
-🧠 How It Works
+## 🧠 How It Works
 
 The script reads URLs from scrape_url.json
 
