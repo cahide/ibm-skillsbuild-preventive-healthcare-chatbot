@@ -17,24 +17,25 @@ to generate **Question–Answer (Q&A)** pairs for chatbot training.
 
 ## ⚙️ Setup Instructions
 
-1- Clone the repository
-
+- Clone the repository
+```bash
 git clone https://github.com/ibm-skillsbuild-preventive-healthcare-chatbot.git
 cd ibm-skillsbuild-preventive-healthcare-chatbot
-
-2- Add environment variables Using Google Colab Secrets with these names
-
+```
+- Add environment variables using Google Colab Secrets with these names
+```python
 api_key = userdata.get('WATSONX_API_KEY')
 project_id = userdata.get('WATSONX_PROJECT_ID')
+```
 
 ## 🧠 How It Works
 
-The script reads URLs from scrape_url.json
+- The script reads URLs from scrape_url.json
 
-It scrapes paragraph text from each page
+- It scrapes paragraph text from each page
 
-Only paragraphs containing key health terms (like exercise, diet, nutrition, disease, prevention, and well-being) are kept.
+- Only paragraphs containing key health terms (like exercise, diet, nutrition, disease, prevention, and well-being) are kept.
 
-Each paragraph is sent to the Granite model to generate 3-5 diverse Q&A pairs.
+- Each paragraph is sent to the Granite model to generate 3-5 diverse Q&A pairs.
 
-All results are saved in preventive_health_faq.json.
+- All results are saved in preventive_health_faq.json.
